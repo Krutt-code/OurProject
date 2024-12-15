@@ -34,7 +34,41 @@ def is_lucky_test(num) -> bool:
 def print2(): 
     """Следующая функция вывода результатов"""
     print('Print 2')
+
+def get_unicode(char):
+    """Эта функция получает символ с клавиатуры и возвращает его код Unicode.
+    По сценарию нам известен некоторый знак, введенный пользователем, наша функция принимает его и проводит анализ, выводя код символа из Unicode
     
+    Этапы проверки: 
+    1. Проверка, что введен только один символ
+    2. Проверка, что введенный символ не цифра"""
+    
+    return ord(char)
+
+def unicode_test():
+    char = 'a'
+    print('Этап 1: Выводим unicode одного символа')
+    try: 
+        """Выводим unicode одного символа"""
+        print(get_unicode(char)) 
+    except Exception as e:
+        print(e)
+            
+    char = 'ad'
+    print('Этап 2: Результат при двух символах')
+    try:
+        """Результат при двух символах"""
+        print(get_unicode(char))
+    except Exception as e:
+        print(e)
+
+    char = 2
+    print('Этап 3: Результат при вводе цифры')
+    try:
+        """Результат при вводе цифры"""
+        print(get_unicode(char))
+    except Exception as e:
+        print(e)    
 
 def main():
     print1()
@@ -43,4 +77,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    unicode_test()
