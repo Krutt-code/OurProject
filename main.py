@@ -31,7 +31,8 @@ def is_lucky_test(num) -> bool:
 
     return random.random() < (num / 100)
 
-def print2():
+def print2(): 
+    """Следующая функция вывода результатов"""
     print('Print 2')
     
 
