@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['архитектура_0',['Архитектура',['../md__r_e_a_d_m_e.html#architecture',1,'']]]
+  ['readme_2emd_0',['README.md',['../README_8md.html',1,'']]]
 ];
